@@ -1,19 +1,15 @@
 import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import PressMe from "./components/PressMe";
+
 
 export default class App extends React.Component {
-  state = {
-    number: 0,
-  }
 
   render() {
 
     return (
       <View style={styles.container}>
-        <Text>{this.state.number}</Text>
-        <TouchableOpacity onPress={() => this.setState({number: this.state.number+1})}>
-          <Text>Press me!(state)</Text>
-        </TouchableOpacity>
+        <PressMe />
       </View>
     )
   }
