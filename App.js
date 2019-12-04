@@ -9,7 +9,9 @@ export default class App extends React.Component {
 
     return (
       <View style={styles.container}>
-        <PressMe />
+        <PressMe textContent="react" />
+        <PressMe textContent="native" />
+        <PressMe textContent="勉強会" />
       </View>
     )
   }

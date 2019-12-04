@@ -12,7 +12,7 @@ class PressMe extends React.Component {
       <View style={{backgroundColor: 'yellow', margin: 5}}>
         <Text style={{fontSize: 30}}>{this.state.number}</Text>
         <TouchableOpacity onPress={() => this.setState({number: this.state.number+1})}>
-          <Text style={{fontSize: 30}}>Press me!(state)</Text>
+          <Text style={{fontSize: 30}}>Press me!({this.props.textContent})</Text>
         </TouchableOpacity>
       </View>
     );
